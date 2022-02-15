@@ -1,0 +1,62 @@
+/* Website Swag */
+.site-title {
+    color: purple;
+}
+header,footer {
+    background-color: darksalmon;
+}
+
+body {
+    background-color: beige;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+h1, h2 {
+    color: rgb(50, 152, 155);
+
+}
+section h2 {
+    color:coral;
+}
+.darkolivegreen-text {
+    color: rgb(194, 249, 99);
+}
+#my-image {
+    box-shadow: 0 2px 1px rgb(0, 0, 0);
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* Selects the second element in a list */
+li:nth-child(odd) {
+    background:lightgrey
+}
+
+/* link stuff */
+a:link {
+    text-decoration: none;
+    color:rgb(194, 249, 99)
+    
+}
+a:visited {
+    text-decoration: none;
+    color: red;
+}
+a:hover {
+    text-decoration: none;
+    background-color: rgb(50, 152, 155);
+    color: whitesmoke;
+}
+a:active {
+    text-decoration: none;
+    color:yellow
+    
+}
+
+  .borders {
+    border: 1px solid black;
+    background-color: sandybrown;
+ }
