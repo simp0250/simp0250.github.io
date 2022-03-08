@@ -1,0 +1,107 @@
+body {
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.container img {
+    width: 1000px;
+    
+}
+.container{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+.container .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 55%;
+    text-align: center;
+    width: 50%;
+    color: white;
+}
+/* navigation bar stylization */
+nav {
+    text-align: center;
+    text-transform: uppercase;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color:black;
+}
+a:hover {
+    color: blueviolet;
+}
+a:active {
+    color: black;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 100px;
+    padding: 0;
+}
+/* Title information */
+h1 { 
+    font-weight: normal;
+    font-size: 70px;
+    margin: 10px;
+   
+}
+h2 {
+    font-weight: normal;
+    margin: 10px;
+}
+h3 {
+    font-weight: normal;
+    margin: 10px;
+}
+h4 {
+    font-weight: normal;
+}
+/* keeps paragraph align with other texts */
+p {
+    padding-top: 10px;
+    margin: 10px;
+}
+/* Keep image top right */
+.article img {
+    display: block;
+  float: left;
+  margin: 10px;
+  width: 200px;
+}
+.wrapper { 
+    max-width: 1000px;
+    margin: auto;
+    background-color: #cae4e1;
+
+}
+/* Form box details and stylization */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    resize: vertical;
+  } 
+.box {
+        padding: 10px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+/* copyright of Lone Starfish */ 
+footer {
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
