@@ -1,132 +1,318 @@
+/* Mobile Friendly CSS */
 body {
-    margin: 0;
-    background-color: white;
-    }
-/* Keeps all information inside structure */
-.wrapper {
-    max-width: 100%;
-    margin: auto;
-    padding: 1rem;
-}
-.wrapper-2 {
-    max-width: 100%;
-    margin: auto;
-}
-/* top of webpage */
-nav {
-    font-family: sans-serif;
-    line-height: 2rem;
-    font-size: 12px;
-    text-align: center;
-    text-decoration: none;
-}
 
-header {
-    background-color: #c78c06;
-    }
-/* navigation function */
-nav .top-nav {
-    text-decoration: none;
-}   
-nav ul {
-    line-height: 3rem;
-    padding-left: 0;
+
 }
+/* company logo keep in top corner */
+.logo {
+    width: 15%;
+    padding: 10px;
+}
+.top-nav {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    line-height: 3rem;
+}
+/* top navigation link control styles */
 a:link {
     color: #c78c06;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 a:visited {
     color: #c78c06;
 }
 a:hover {
-    color:tomato
+    color: #c78c06;
 }
 a:active {
-    background-color: #c78c06;
+    color: transparent;
 }
-/* Landing page */
-.banner {
+/* keep all information on webpage within dimension */
+.wrapper {
+    background-color: #222;
+    max-width: 100%;
+}
+.search input {
+    width: 80%;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.fa-magnifying-glass {
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    padding: 8px 8px 10px 8px;
+}
+img {
+    width: 100%;
+}
+/* landing page styles */
+.intro {
     background-image: url(../images/main-banner.jpg);
     background-size: cover;
+    background-repeat: no-repeat;   
     padding: 1rem;
 }
-.welcome {
-    width: 100%;
-    color: white;
-    padding: 1rem;
-    background-color: rgb(67, 67, 67, .5);
-}
-/* Title + font structure */
+/* typography styles */
 h1 {
-    font-size: 5rem;
-    line-height: 2;
+    font-size: 3rem;
+    line-height: 85px;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
+
 }
 p {
-    font-size: 13px;
-    margin-bottom: 1rem;
-    font-family: sans-serif;
-    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.about h2 {
+    margin: 20px 0px 5px 0px;
 }
 h2 {
-    font-size: 3rem;
-    line-height: 1.5;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 7% 0% 3% 1.5%;
 }
-/* organize main-body visuals */
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+/* bring down opacity to view background image */
+.intro-info {
+    background-color: rgb(34,34,34, .7);
+    color: white;
+    left: 0;
+    right: ;
+}
+button {
+    border: none;
+    font-size: 15px;
+    margin: auto;
+    padding: 7px 20px 10px 20px;
+    color: white;
+    background-color: black;
+}
+/* unique first button */
+.intro-info button {
+    background-color: #c78c06;
+    color: black;
+}
+.fa-caret-right {
+    font-size: 25px;
+    padding: 10px;
+}
+/* our services stylization */
 .about {
-    background-color: #ffe6ac;
     padding: 1rem;
-    width: 100%;
+    background-color: #ffe6ac;
 }
 .digital-trans {
-    background-color: #ffe6ac;
+    margin-top: -20px;
+    margin-bottom: 15px;
     padding: 1rem;
+    background-color: #ffe6ac;
 }
-/* Responsive single column layout */
-@media (min-width: 760px) {
+.marketing {
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: 1rem;
+    background-color: #ffe6ac;
+}
+.video {
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: 1rem;  
+    background-color: #ffe6ac;
+}
+.web-dev {
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: 1rem; 
+    background-color: #ffe6ac;
+}
+.print {
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: 1rem;
+    background-color: #ffe6ac;
+}
+.vision {
+    background-image: url(../images/vision.jpg);
+    color: white;
+    padding: 1rem;  
+    background-size: cover;
+    margin-top: 1rem;
+}
+.vision button {
+    border: 1px solid #c78c06;
+}
+/* our team stylization */
+.john {
+    background-color: #ffe6ac;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.bob {
+    background-color: #ffe6ac;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+h4 {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    margin-top: -20px;
+}
+hr {
+    margin-top: -10px;
+    border-color: #c78c06;
+}
+/* Form box details and stylization */
+input[type=text] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid black;
+}
+textarea {
+    width: 92%;
+    height: 100px;
+    border: 1px solid black;
+    resize: none;
+} 
+/* change button to follow theme of website */
+input[type=submit] {
+    background-color: #222;
+    color: #c78c06;
+    border: none;
+    font-size: 17px;
+    margin-top: 12px;
+}
+/* Table details and stylization */
+table {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 20px;
+}
+table th {
+    background-color: #ffe6ac;
+}
+/* Location taken from Google Maps */
+iframe {
+    margin-top: -15px;
+    width: 100%;
+}
+/* trademark and citing info */
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding-top: 10px;
+    margin-top: 10px;
+
+}
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+/* Adjustments For Desktop View */
+@media screen and (min-width: 760px) {
     .wrapper {
-      display: flex;
-      width: 100%;
-      margin: auto;
-      justify-content: space-evenly;
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;   
     }
-    header {
-        background-color: transparent;
-        width: 30%;
+    footer {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .intro {
+        display: flex;
+
+    }
+    .logo {
+        width: 75px;
+        padding-left: 100px;
+    }
+
+    .wrap {
+        max-width: 1200px;
+        margin: auto;
     }
     ul li {
         display: inline-flex;
-        margin: 10px;
+        margin: 15px;
     }
-    .searchbar {
+    .search {
         padding-left: 50px;
         height: 30px;
-        width: 100%;
-        margin: 30px;
+        margin: 40px;
     }
-    .button {
-        width: 25%;
+    .search, .fa-magnifying-glass {
+        display: flex;
     }
-    .about {
-        padding: 20px 70px 20px 70px;
-    }
-    .about img {
+    /* grid to keep all information within one page */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50%;
+        
+
+      }
+      .grid-item-1 {
+          grid-row-start: 1;
+          grid-row-end: 4;
+      }
+      .grid-item-2 {
+        margin-left: 20px;
+        padding-top: 115px;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      
+      .flex-container > div {
         width: 50%;
-        height: 300px;
+    
+        
+
+      }
+      /* change order of information for desktop view */
+    .info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: max-content;
     }
-    .about-text {
-        padding-left: 15px;
-        font-size: 14px;
-        padding-top: 0;
-        max-height: fit-content;
-        color: white;
+    .contact    {
+
     }
-    .digital-trans, img {
-        padding: 0px;
+    .class {
+        order: 2;
+        flex-grow: 2;
     }
+    .operation {
+        width: 1200px;
+        order: 3;
     }
+
+}
